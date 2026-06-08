@@ -1,0 +1,259 @@
+.amz-header {
+  background: #131921;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.amz-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.amz-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.amz-logo-mark {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: #131921;
+}
+
+.amz-logo-text {
+  font-size: 18px;
+}
+
+.amz-search {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.amz-search input {
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.amz-search-btn {
+  border: none;
+  background: #fbbf24;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.amz-search-btn:hover {
+  filter: brightness(0.97);
+}
+
+.amz-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.amz-account,
+.amz-orders,
+.amz-cart {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.amz-account:hover,
+.amz-orders:hover,
+.amz-cart:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.amz-account-line1 {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.amz-account-line2 {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.amz-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.amz-cart-icon {
+  position: relative;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.amz-cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #131921;
+  font-weight: 900;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amz-account-popover {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: min(520px, calc(100vw - 28px));
+  background: #fff;
+  color: #111827;
+  border-radius: 10px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.amz-popover-top {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  display: grid;
+  gap: 10px;
+}
+
+.amz-signin-btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #f59e0b;
+  background: #fbbf24;
+  color: #111827;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.amz-signin-btn:hover {
+  filter: brightness(0.98);
+}
+
+.amz-register-row {
+  text-align: center;
+  font-size: 12px;
+  color: #374151;
+}
+
+.amz-link {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.amz-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.amz-col {
+  padding: 14px;
+}
+
+.amz-col + .amz-col {
+  border-left: 1px solid #e5e7eb;
+}
+
+.amz-col-title {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.amz-col-item {
+  padding: 6px 0;
+  color: #374151;
+  font-size: 13px;
+}
+
+.amz-col-link {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 6px 0;
+  cursor: pointer;
+  color: #111827;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.amz-col-link:hover {
+  color: #2563eb;
+}
+
+.amz-signedin-as {
+  font-size: 13px;
+  color: #111827;
+}
+
+.amz-signedin-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.amz-signout-btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #111827;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.amz-signout-btn:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 720px) {
+  .amz-header-inner {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .amz-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+  }
+}
